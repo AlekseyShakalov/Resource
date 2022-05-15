@@ -8,6 +8,7 @@ body {
   max-width: 1230px;
   margin: 0 auto;
   overflow: auto;
+  padding: 0px 10px;
 }
 
 .container-sm {
@@ -15,6 +16,7 @@ body {
   max-width: 940px;
   margin: 0 auto;
   overflow: auto;
+  padding: 0px 10px;
 }
 
 .clearfix {
@@ -86,11 +88,17 @@ nav li a:hover {
   top: 0;
 }
 
+.logo-wrap:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
 .header-form {
   width: 100%;
   max-width: 390px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .header-form label {
@@ -141,6 +149,12 @@ nav li a:hover {
   font-size: 14px;
   line-height: 21px;
   padding: 10.5px 44px;
+}
+
+.header-form button:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+  cursor: pointer;
 }
 /* header end */
 
@@ -195,7 +209,7 @@ nav li a:hover {
   font-size: 23px;
   line-height: 23px;
   text-align: center;
-  padding: 11px 32px 0px 32px;
+  padding: 11px 32px 0px 31px;
 }
 
 .welcome-btn span {
@@ -208,12 +222,32 @@ nav li a:hover {
 
 .btn-orange {
   background: #F55F39;
-  margin-right: 13px;
+  margin-right: 14px;
+}
+
+.btn-orange a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-orange:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 .btn-white {
   background: #FFFFFF;
   color: #4D4D4D;
+}
+
+.btn-white a {
+  color: #4D4D4D;
+  text-decoration: none;
+}
+
+.btn-white:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
 }
 /* section-1 end */
 
@@ -282,7 +316,7 @@ nav li a:hover {
   align-items: center;
 }
 
-.writers-btn {
+.writers-btn a {
   font-size: 15px;
   line-height: 23px;
   color: #FFFFFF;
@@ -291,6 +325,12 @@ nav li a:hover {
   position: relative;
   bottom: 13px;
   right: 17px;
+  text-decoration: none;
+}
+
+.writers-btn a:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
 }
 /* section-2 end */
 
@@ -313,7 +353,7 @@ nav li a:hover {
   width: 490px;
 }
 
-.recently-caption h2 span {
+.recently-caption h2 a {
   line-height: 43px;
   color: #F55F39;
   position: relative;
@@ -321,9 +361,15 @@ nav li a:hover {
   bottom: 3px;
   padding-right: 4px;
   margin-right: 10px;
+  text-decoration: none;
 }
 
-.recently-caption h2 span:before {
+.recently-caption h2 a:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
+.recently-caption h2 a:before {
   content: "";
   width: 100%;
   position: absolute;
@@ -354,15 +400,24 @@ nav li a:hover {
   background: #FFFFFF;
   padding: 28px 57px 0px 0px;
   position: relative;
-  top: 400px;
+  bottom: -400px;
   width: 370px;
   height: 305px;
 }
 
-.photographers h3 {
+.photographers a {
   font-size: 30px;
   line-height: 38px;
   color: #252061;
+  text-decoration: none;
+}
+
+.photographers a:hover {
+  color: #F55F39;
+  text-decoration: underline;
+}
+
+.photographers h3 {
   margin: 0px 0px 13px 0px;
 }
 
@@ -370,7 +425,7 @@ nav li a:hover {
   font-size: 14px;
   line-height: 23px;
   color: #969696;
-  margin: 0px 0px 13px 0px;
+  margin: 0px 0px 14px 0px;
 }
 
 .robert-brown {
@@ -383,14 +438,21 @@ nav li a:hover {
   margin-right: 10px;
 }
 
-.robert-brown h4 {
+.robert-brown a {
   font-size: 15px;
   line-height: 23px;
+  text-decoration: none;
+}
+
+.robert-brown a:hover {
+  color: #F55F39;
+  text-decoration: underline;
 }
 
 .robert-brown p {
   font-size: 13px;
   line-height: 23px;
+  color: #252061;
 }
 
 .recently-block-2 {
@@ -411,10 +473,10 @@ nav li a:hover {
 
 .seven-things {
   background: #FFFFFF;
-  padding: 21px 0px 0px 0px;
+  padding: 21px 81px 0px 0px;
   position: relative;
   top: 128px;
-  width: 301px;
+  width: 220px;
 }
 
 .seven-things p {
@@ -425,16 +487,22 @@ nav li a:hover {
   margin-left: 17px;
 }
 
-.seven-things h2 {
+.seven-things a {
   font-size: 18px;
   line-height: 23px;
   color: #252061;
   width: 220px;
+  text-decoration: none;
 }
 
+.seven-things a:hover {
+  color: #F55F39;
+  text-decoration: underline;
+}
+  
 .recently-block-4 {
   background: url(../img/writers-block-bg.png);
-  padding: 45px 0px 40px 60px;
+  padding: 46px 0px 40px 60px;
   width: 316px;
   color: #FFFFFF;
 }
@@ -459,4 +527,182 @@ nav li a:hover {
   text-transform: capitalize;
   color: #F55F39;
 }
+
+.recently-block-4 a:hover {
+  text-decoration: underline;
+}
 /* section-3 end */
+
+
+/* media start */
+@media (max-width: 998px) {
+  .recently-caption {
+    margin-bottom: 50px;
+  }
+  .recently-caption h2 {
+    margin: 0 auto;
+  }
+  .recently-wrap {
+    display: block;
+  }
+  .recently-block-1 {
+    margin: 35px auto;
+  }
+  .recently-block-2 {
+    margin: 35px auto;
+  }
+  .recently-block-3 {
+    margin: 35px auto;
+  }
+  .recently-block-4 {
+    margin: 35px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .recently-caption {
+    margin-bottom: 35px;
+  }
+  .recently-caption h2 {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+  }
+  .recently-wrap {
+    display: block;
+  }
+  .recently-block-1 {
+    margin: 35px auto;
+    width: 376px;
+    height: 475px;
+  }
+  .photographers {
+    background: #FFFFFF;
+    padding: 14px 28px 0px 0px;
+    position: relative;
+    bottom: -226px;
+    left: -1px;
+    width: 320px;
+    height: 236px;
+  }
+  .photographers h3 a {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .photographers p {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0px 0px 10px 0px;
+  }
+  .robert-brown h4 a {
+    font-size: 13px;
+    line-height: 17px;
+}
+  .recently-block-2 {
+    margin: 35px auto;
+  }
+  .recently-block-3 {
+    margin: 35px auto;
+  }
+  .seven-things {
+    padding: 21px 63px 0px 0px;
+    position: relative;
+    bottom: -140px;
+  }
+  .seven-things p {
+    font-size: 11px;
+    margin-left: 11px;
+  }
+  .seven-things h2 a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .recently-block-4 {
+    margin: 35px auto;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .recently-block-1 {
+    width: 346px;
+    height: 440px;
+    margin-bottom: 50px;
+  }
+  .photographers {
+    position: relative;
+    bottom: -226px;
+  }
+  .recently-block-2 {
+    width: 347px;
+    height: 222px;
+  }
+  .recently-block-3 {
+    width: 347px;
+    height: 222px;
+  }
+  .recently-block-4 {
+    padding: 46px 0px 40px 30px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .recently-caption {
+    margin-bottom: 25px;
+  }
+  .recently-caption h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 290px;
+  }
+  .recently-block-1 {
+    width: 290px;
+    height: 370px;
+    margin: 25px auto;
+    margin-bottom: 100px;
+  }
+  .photographers {
+    width: 290px;
+    position: relative;
+    bottom: -216px;
+  }
+  .photographers a {
+    font-size: 25px;
+  }
+  .robert-brown a {
+    font-size: 18px;
+  }
+  .recently-block-2 {
+    width: 290px;
+    height: 186px;
+    margin: 35px auto 20px;
+  }
+  .recently-block-3 {
+    width: 290px;
+    height: 186px;
+    margin: 20px auto;
+  }
+  .seven-things {
+    padding: 21px 34px 0px 0px;
+    position: relative;
+    top: 74px;
+  }
+  .seven-things a {
+    font-size: 16px;
+  }
+  .recently-block-4 {
+    padding: 30px 0px 30px 25px;
+    width: 265px;
+  }
+  .recently-block-4 h3 {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  .recently-block-4 p {
+    font-size: 12px;
+    width: 200px;
+    margin-bottom: 13px;
+  }
+}
