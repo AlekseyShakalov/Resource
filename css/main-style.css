@@ -1,0 +1,393 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0px 10px;
+}
+
+.container-sm {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0px 10px;
+}
+
+
+
+/* section-3 start */
+.recently {
+  padding-top: 48px;
+  padding-bottom: 100px;
+  color: #444444;
+}
+
+.recently-caption {
+  margin-bottom: 72px;
+}
+
+.recently-caption h2 {
+  font-size: 52px;
+  line-height: 49px;
+  width: 490px;
+}
+
+.recently-caption h2 a {
+  line-height: 43px;
+  color: #F55F39;
+  position: relative;
+  left: 10px;
+  bottom: 3px;
+  padding-right: 4px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.recently-caption h2 a:hover {
+  -webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
+.recently-caption h2 a:before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  background: #F55F39;
+  height: 4px;
+}
+
+.recently-wrap {
+  display: flex;
+}
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.recently-block-1 {
+  background: url(../img/gas-mask.png);
+  background-size: cover;
+  width: 534px;
+  height: 675px;
+  margin-right: 30px;
+}
+
+.photographers {
+  background: #FFFFFF;
+  padding: 28px 57px 0px 0px;
+  position: relative;
+  bottom: -400px;
+  width: 370px;
+  height: 305px;
+}
+
+.photographers a {
+  font-size: 30px;
+  line-height: 38px;
+  color: #252061;
+  text-decoration: none;
+}
+
+.photographers a:hover {
+  color: #F55F39;
+  text-decoration: underline;
+}
+
+.photographers h3 {
+  margin: 0px 0px 13px 0px;
+}
+
+.photographers p {
+  font-size: 14px;
+  line-height: 23px;
+  color: #969696;
+  margin: 0px 0px 14px 0px;
+}
+
+.robert-brown {
+  display: flex;
+  color: #252061;
+}
+
+.robert-brown img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.robert-brown a {
+  font-size: 15px;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+.robert-brown a:hover {
+  color: #F55F39;
+  text-decoration: underline;
+}
+
+.robert-brown p {
+  font-size: 13px;
+  line-height: 23px;
+  color: #252061;
+}
+
+.recently-block-2 {
+  background: url(../img/division.png);
+  width: 376px;
+  height: 240px;
+  margin-bottom: 30px;
+}
+
+.recently-block-3 {
+  background: url(../img/seven-things.png);
+  background-size: cover;
+  padding: 0px 0px 0px 0px;
+  width: 376px;
+  height: 240px;
+  margin-bottom: 30px;
+}
+
+.seven-things {
+  background: #FFFFFF;
+  padding: 21px 81px 0px 0px;
+  position: relative;
+  top: 128px;
+  width: 220px;
+}
+
+.seven-things p {
+  font-size: 12px;
+  line-height: 18px;
+  color: #929292;
+  margin-bottom: 4px;
+  margin-left: 17px;
+}
+
+.seven-things a {
+  font-size: 18px;
+  line-height: 23px;
+  color: #252061;
+  width: 220px;
+  text-decoration: none;
+}
+
+.seven-things a:hover {
+  color: #F55F39;
+  text-decoration: underline;
+}
+  
+.recently-block-4 {
+  background: url(../img/writers-block-bg.png);
+  padding: 46px 0px 40px 60px;
+  width: 316px;
+  color: #FFFFFF;
+}
+
+.recently-block-4 h3 {
+  font-size: 28px;
+  line-height: 30px;
+  margin-bottom: 26px;
+}
+
+.recently-block-4 p {
+  font-size: 14px;
+  line-height: 23px;
+  width: 205px;
+  margin-bottom: 19px;
+}
+
+.recently-block-4 a {
+  font-size: 14px;
+  line-height: 23px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #F55F39;
+}
+
+.recently-block-4 a:hover {
+  text-decoration: underline;
+}
+/* section-3 end */
+
+
+/* media start */
+@media (max-width: 998px) {
+  .recently-caption {
+    margin-bottom: 50px;
+  }
+  .recently-caption h2 {
+    margin: 0 auto;
+  }
+  .recently-wrap {
+    display: block;
+  }
+  .recently-block-1 {
+    margin: 35px auto;
+  }
+  .recently-block-2 {
+    margin: 35px auto;
+  }
+  .recently-block-3 {
+    margin: 35px auto;
+  }
+  .recently-block-4 {
+    margin: 35px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .recently-caption {
+    margin-bottom: 35px;
+  }
+  .recently-caption h2 {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 auto;
+  }
+  .recently-wrap {
+    display: block;
+  }
+  .recently-block-1 {
+    margin: 35px auto;
+    width: 376px;
+    height: 475px;
+  }
+  .photographers {
+    background: #FFFFFF;
+    padding: 14px 28px 0px 0px;
+    position: relative;
+    bottom: -226px;
+    left: -1px;
+    width: 320px;
+    height: 236px;
+  }
+  .photographers h3 a {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .photographers p {
+    font-size: 12px;
+    line-height: 21px;
+    margin: 0px 0px 10px 0px;
+  }
+  .robert-brown h4 a {
+    font-size: 13px;
+    line-height: 17px;
+}
+  .recently-block-2 {
+    margin: 35px auto;
+  }
+  .recently-block-3 {
+    margin: 35px auto;
+  }
+  .seven-things {
+    padding: 21px 63px 0px 0px;
+    position: relative;
+    bottom: -140px;
+  }
+  .seven-things p {
+    font-size: 11px;
+    margin-left: 11px;
+  }
+  .seven-things h2 a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .recently-block-4 {
+    margin: 35px auto;
+  }
+}
+
+
+@media (max-width: 425px) {
+  .recently-block-1 {
+    width: 346px;
+    height: 440px;
+    margin-bottom: 50px;
+  }
+  .photographers {
+    position: relative;
+    bottom: -226px;
+  }
+  .recently-block-2 {
+    width: 347px;
+    height: 222px;
+  }
+  .recently-block-3 {
+    width: 347px;
+    height: 222px;
+  }
+  .recently-block-4 {
+    padding: 46px 0px 40px 30px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .recently-caption {
+    margin-bottom: 25px;
+  }
+  .recently-caption h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 290px;
+  }
+  .recently-block-1 {
+    width: 290px;
+    height: 370px;
+    margin: 25px auto;
+    margin-bottom: 100px;
+  }
+  .photographers {
+    width: 290px;
+    position: relative;
+    bottom: -216px;
+  }
+  .photographers a {
+    font-size: 25px;
+  }
+  .robert-brown a {
+    font-size: 18px;
+  }
+  .recently-block-2 {
+    width: 290px;
+    height: 186px;
+    margin: 35px auto 20px;
+  }
+  .recently-block-3 {
+    width: 290px;
+    height: 186px;
+    margin: 20px auto;
+  }
+  .seven-things {
+    padding: 21px 34px 0px 0px;
+    position: relative;
+    top: 74px;
+  }
+  .seven-things a {
+    font-size: 16px;
+  }
+  .recently-block-4 {
+    padding: 30px 0px 30px 25px;
+    width: 265px;
+  }
+  .recently-block-4 h3 {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+  .recently-block-4 p {
+    font-size: 12px;
+    width: 200px;
+    margin-bottom: 13px;
+  }
+}
